@@ -22,6 +22,10 @@ const authors = {
   'Roger': {
     name: 'Roger',
     age: 7
+  },
+  'New Author': {
+    name: 'Auth',
+    age: 70
   }
 }
 
@@ -76,7 +80,7 @@ const postType =  new GraphQLObjectType({
 
 
 const queryType =  new GraphQLObjectType({
-  name: 'Query',
+  name: 'RootQuery',
   fields: {
     post: {
       type: postType,
